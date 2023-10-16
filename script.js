@@ -3,7 +3,10 @@ let list = document.getElementById("todoList");
 
 function add(){
 	let text = document.getElementById("newTodoInput").value;
-	let li = document.createElement("li");
-	li.innerHTML = text;
-	list.appendChild(li);
+	let l = document.createElement("li");
+	if(text !== ""){
+		l.innerHTML = text;
+		list.appendChild(l);
+	}
+	
 }
